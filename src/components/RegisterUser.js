@@ -4,6 +4,7 @@ import {withRouter} from 'react-router-dom';
 class RegisterUser extends React.Component{
     emptyUser = {
         email: '',
+        confirmed: false
     };
     constructor(props){
         super(props);
