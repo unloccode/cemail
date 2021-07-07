@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 //require components
 import Home from './components/Home.js';
+import Confirm from './components/Confirm.js';
 
 class App extends React.Component{
   render(){
@@ -12,6 +13,7 @@ class App extends React.Component{
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/confirm/:id' component={Confirm} />
         </Switch>
       </Router>
     );
